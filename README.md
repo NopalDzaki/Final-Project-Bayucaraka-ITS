@@ -185,4 +185,4 @@ Project ini menggunakan **MIT License**.
 
 ---
 
-# 🇮🇩 Garudaku Jaya Selalu
+# #Garudaku Jaya Selalu
