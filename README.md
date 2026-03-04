@@ -1,36 +1,105 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Bayucaraka ITS - Final Project 🚀
 
-## Getting Started
+**Bayucaraka ITS** adalah landing page interaktif untuk tim riset UAV (Unmanned Aerial Vehicle) dari Institut Teknologi Sepuluh Nopember. Project ini dibangun dengan fokus pada performa tinggi, desain modern berbasis "Glassmorphism", dan elemen visual 3D yang dinamis.
 
-First, run the development server:
+---
 
-```bash
+## ✨ Fitur Utama
+
+- **🚀 Interactive Hero Section**: Header dinamis dengan animasi teks gradien dan ornamen latar belakang yang bergerak.
+- **🌌 3D Particle Background**: Latar belakang interaktif menggunakan library Three.js untuk memberikan kesan futuristik.
+- **🌓 Toggle Dark/Light Mode**: Dukungan penuh untuk tema gelap dan terang dengan transisi yang halus.
+- **📱 Responsive Design**: Layout yang optimal di berbagai perangkat, mulai dari smartphone hingga desktop.
+- **🏅 Achievement Wall**: Komponen yang menampilkan sejarah prestasi tim yang dikelompokkan berdasarkan tahun.
+- **🛠 Division Showcase**: Informasi detail mengenai divisi strategis tim (VTOL, FW, Racing Plane, Tech Dev, Official).
+- **📸 Mission Logs Gallery**: Galeri visual kegiatan tim dengan efek hover yang interaktif.
+
+---
+
+## 🛠 Teknologi yang Digunakan
+
+Proyek ini menggunakan stack teknologi modern untuk memastikan kecepatan dan kemudahan pengembangan:
+
+- **Framework**: [Next.js 15+](https://nextjs.org/) (App Router)
+- **Library UI**: [React 19](https://react.dev/)
+- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
+- **Animasi 3D**: [Three.js](https://threejs.org/)
+- **Ikon**: [Lucide React](https://lucide.dev/)
+- **Bahasa**: [TypeScript](https://www.typescript.lang/)
+- **Theming**: [Next Themes](https://github.com/pacocoursey/next-themes)
+
+---
+
+## 📋 Prasyarat Instalasi
+
+Pastikan Anda sudah menginstal perangkat lunak berikut di komputer Anda:
+
+- **Node.js** (Versi 20.x atau terbaru)
+- **npm**, **yarn**, **pnpm**, atau **bun** sebagai package manager.
+
+---
+
+## 🚀 Memulai Proyek
+
+1. **Clone Repository**
+   ```bash
+   git clone [https://github.com/username/final-project-bayucaraka-its.git](https://github.com/username/final-project-bayucaraka-its.git)
+   cd Final-Project-Bayucaraka-ITS
+Instal Dependensi
+
+Bash
+npm install
+# atau
+pnpm install
+Jalankan Server Pengembangan
+
+Bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Buka http://localhost:3000 di browser Anda untuk melihat hasilnya.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Build untuk Produksi
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Bash
+npm run build
+npm run start
+📂 Struktur Proyek
+Plaintext
+.
+├── app/
+│   ├── layout.tsx       # Root layout & font configuration
+│   ├── page.tsx         # Main entry point (Landing Page)
+│   └── globals.css      # Tailwind & custom CSS animations
+├── components/          # Reusable UI components
+├── public/              # Statics assets (images, icons, etc.)
+├── package.json         # Project dependencies & scripts
+└── tsconfig.json        # TypeScript configuration
+💡 Contoh Penggunaan
+Untuk memodifikasi konten seperti daftar prestasi atau divisi, Anda dapat mengedit file app/page.tsx. Contoh menambahkan data prestasi baru:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+TypeScript
+const rawAchievements = [
+  {
+    year: 2026,
+    category: "KRTI",
+    item: "1st place Special Award",
+    badge: "Terbaru",
+  },
+  // ...data lainnya
+];
+🤝 Kontribusi
+Kontribusi selalu terbuka untuk pengembangan project ini!
 
-## Learn More
+Fork project ini.
 
-To learn more about Next.js, take a look at the following resources:
+Buat branch fitur baru (git checkout -b fitur/FiturKeren).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Commit perubahan Anda (git commit -m 'Menambahkan fitur keren').
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Push ke branch tersebut (git push origin fitur/FiturKeren).
 
-## Deploy on Vercel
+Buat Pull Request.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+📄 Lisensi
+Project ini dilisensikan di bawah Lisensi MIT - lihat file LICENSE untuk detail lebih lanjut.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+#GarudakuJayaSelalu 🇮🇩
