@@ -1,105 +1,188 @@
-# Bayucaraka ITS - Final Project 🚀
+# 🚀 Bayucaraka ITS – Final Project
 
-**Bayucaraka ITS** adalah landing page interaktif untuk tim riset UAV (Unmanned Aerial Vehicle) dari Institut Teknologi Sepuluh Nopember. Project ini dibangun dengan fokus pada performa tinggi, desain modern berbasis "Glassmorphism", dan elemen visual 3D yang dinamis.
-
----
-
-## ✨ Fitur Utama
-
-- **🚀 Interactive Hero Section**: Header dinamis dengan animasi teks gradien dan ornamen latar belakang yang bergerak.
-- **🌌 3D Particle Background**: Latar belakang interaktif menggunakan library Three.js untuk memberikan kesan futuristik.
-- **🌓 Toggle Dark/Light Mode**: Dukungan penuh untuk tema gelap dan terang dengan transisi yang halus.
-- **📱 Responsive Design**: Layout yang optimal di berbagai perangkat, mulai dari smartphone hingga desktop.
-- **🏅 Achievement Wall**: Komponen yang menampilkan sejarah prestasi tim yang dikelompokkan berdasarkan tahun.
-- **🛠 Division Showcase**: Informasi detail mengenai divisi strategis tim (VTOL, FW, Racing Plane, Tech Dev, Official).
-- **📸 Mission Logs Gallery**: Galeri visual kegiatan tim dengan efek hover yang interaktif.
+**Bayucaraka ITS** adalah landing page interaktif untuk tim riset **UAV (Unmanned Aerial Vehicle)** dari **Institut Teknologi Sepuluh Nopember**.  
+Project ini dibuat dengan fokus pada **performa tinggi**, **desain modern (Glassmorphism)**, dan **visual 3D dinamis**.
 
 ---
 
-## 🛠 Teknologi yang Digunakan
+# ✨ Fitur Utama
 
-Proyek ini menggunakan stack teknologi modern untuk memastikan kecepatan dan kemudahan pengembangan:
+### 🚀 Interactive Hero Section
+Header dinamis dengan animasi teks gradien serta ornamen background yang bergerak.
 
-- **Framework**: [Next.js 15+](https://nextjs.org/) (App Router)
-- **Library UI**: [React 19](https://react.dev/)
-- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
-- **Animasi 3D**: [Three.js](https://threejs.org/)
-- **Ikon**: [Lucide React](https://lucide.dev/)
-- **Bahasa**: [TypeScript](https://www.typescript.lang/)
-- **Theming**: [Next Themes](https://github.com/pacocoursey/next-themes)
+### 🌌 3D Particle Background
+Latar belakang interaktif menggunakan **Three.js** untuk memberikan nuansa futuristik.
+
+### 🌓 Dark / Light Mode
+Dukungan tema gelap dan terang dengan transisi halus.
+
+### 📱 Fully Responsive
+Layout optimal di berbagai perangkat: mobile, tablet, hingga desktop.
+
+### 🏅 Achievement Wall
+Menampilkan daftar prestasi tim berdasarkan tahun.
+
+### 🛠 Division Showcase
+Informasi tentang divisi dalam tim:
+- VTOL
+- Fixed Wing
+- Racing Plane
+- Tech Development
+- Official
+
+### 📸 Mission Logs Gallery
+Galeri kegiatan tim dengan efek hover interaktif.
 
 ---
 
-## 📋 Prasyarat Instalasi
+# 🛠 Tech Stack
 
-Pastikan Anda sudah menginstal perangkat lunak berikut di komputer Anda:
+Project ini menggunakan teknologi modern untuk performa maksimal.
 
-- **Node.js** (Versi 20.x atau terbaru)
-- **npm**, **yarn**, **pnpm**, atau **bun** sebagai package manager.
+| Technology | Description |
+|---|---|
+| **Next.js 15+** | Framework React dengan App Router |
+| **React 19** | UI Library |
+| **Tailwind CSS 4** | Styling modern utility-first |
+| **Three.js** | 3D animation |
+| **Lucide React** | Icon library |
+| **TypeScript** | Static typing |
+| **Next Themes** | Dark / Light mode |
 
 ---
 
-## 🚀 Memulai Proyek
+# 📋 Prasyarat
 
-1. **Clone Repository**
-   ```bash
-   git clone [https://github.com/username/final-project-bayucaraka-its.git](https://github.com/username/final-project-bayucaraka-its.git)
-   cd Final-Project-Bayucaraka-ITS
-Instal Dependensi
+Pastikan sudah terinstall:
 
-Bash
+- Node.js **v20+**
+- npm / yarn / pnpm / bun
+
+Cek versi Node:
+
+```bash
+node -v
+```
+
+---
+
+# ⚡ Instalasi & Menjalankan Project
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/username/final-project-bayucaraka-its.git
+cd final-project-bayucaraka-its
+```
+
+### 2. Install Dependencies
+
+```bash
 npm install
-# atau
+```
+
+atau
+
+```bash
 pnpm install
-Jalankan Server Pengembangan
+```
 
-Bash
+### 3. Jalankan Development Server
+
+```bash
 npm run dev
-Buka http://localhost:3000 di browser Anda untuk melihat hasilnya.
+```
 
-Build untuk Produksi
+Buka di browser:
 
-Bash
+```
+http://localhost:3000
+```
+
+---
+
+# 🏗 Build untuk Production
+
+```bash
 npm run build
 npm run start
-📂 Struktur Proyek
-Plaintext
+```
+
+---
+
+# 📂 Struktur Project
+
+```
 .
 ├── app/
-│   ├── layout.tsx       # Root layout & font configuration
-│   ├── page.tsx         # Main entry point (Landing Page)
-│   └── globals.css      # Tailwind & custom CSS animations
-├── components/          # Reusable UI components
-├── public/              # Statics assets (images, icons, etc.)
-├── package.json         # Project dependencies & scripts
-└── tsconfig.json        # TypeScript configuration
-💡 Contoh Penggunaan
-Untuk memodifikasi konten seperti daftar prestasi atau divisi, Anda dapat mengedit file app/page.tsx. Contoh menambahkan data prestasi baru:
+│   ├── layout.tsx        # Root layout
+│   ├── page.tsx          # Landing page utama
+│   └── globals.css       # Global styling & animation
+│
+├── components/           # Reusable components
+├── public/               # Static assets
+│
+├── package.json
+├── tsconfig.json
+└── README.md
+```
 
-TypeScript
+---
+
+# 💡 Contoh Modifikasi Konten
+
+Edit file:
+
+```
+app/page.tsx
+```
+
+Contoh menambahkan achievement baru:
+
+```ts
 const rawAchievements = [
   {
     year: 2026,
     category: "KRTI",
-    item: "1st place Special Award",
+    item: "1st Place Special Award",
     badge: "Terbaru",
   },
-  // ...data lainnya
 ];
-🤝 Kontribusi
-Kontribusi selalu terbuka untuk pengembangan project ini!
+```
 
-Fork project ini.
+---
 
-Buat branch fitur baru (git checkout -b fitur/FiturKeren).
+# 🤝 Contributing
 
-Commit perubahan Anda (git commit -m 'Menambahkan fitur keren').
+Kontribusi selalu terbuka!
 
-Push ke branch tersebut (git push origin fitur/FiturKeren).
+1. Fork repository ini
+2. Buat branch fitur
 
-Buat Pull Request.
+```bash
+git checkout -b feature/nama-fitur
+```
 
-📄 Lisensi
-Project ini dilisensikan di bawah Lisensi MIT - lihat file LICENSE untuk detail lebih lanjut.
+3. Commit perubahan
 
-#GarudakuJayaSelalu 🇮🇩
+```bash
+git commit -m "Add: fitur baru"
+```
+
+4. Push branch
+
+```bash
+git push origin feature/nama-fitur
+```
+
+5. Buat Pull Request
+
+---
+
+# 📄 License
+
+Project ini menggunakan **MIT License**.
+
+---
+
+# 🇮🇩 Garudaku Jaya Selalu
