@@ -156,7 +156,7 @@ const mountRef = useRef<HTMLDivElement | null>(null);
   return (
     <div
       ref={mountRef}
-      className="fixed inset-0 -z-10 opacity-60 mix-blend-screen pointer-events-none"
+      className="fixed inset-0 -z-10 opacity-60 pointer-events-none dark:mix-blend-screen mix-blend-multiply"
     />
   );
 };
