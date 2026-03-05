@@ -125,7 +125,7 @@ const mountRef = useRef<HTMLDivElement | null>(null);
     let animationId: number;
     const animate = () => {
       animationId = requestAnimationFrame(animate);
-      particles.rotation.y += 0.0015; // Dibuat lebih smooth dari Vue aslinya
+      particles.rotation.y += 0.0015; 
       particles.rotation.x += 0.0005;
       renderer.render(scene, camera);
     };
